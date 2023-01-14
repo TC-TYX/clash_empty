@@ -1,3 +1,9 @@
 mixed-port: 7890
-proxy-groups:
-proxy-providers:
+mode: direct
+proxies:
+- name: 0.0.0.0
+  type: ss
+  server: 0.0.0.0
+  port: 8080
+  cipher: aes-256-gcm
+  password: 0000000000000
